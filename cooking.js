@@ -19,7 +19,7 @@
       console.log(checked);
 
         //gets the recipes from host
-        fetch("http://localhost:3000/?mode=check&title=null")
+        fetch("http://recipie-helper.herokuapp.com/?mode=check&title=null")
             .then(checkStatus)
             .then(function(responseText) {
               let list = [];
@@ -114,7 +114,7 @@
 
   console.log(message);
   //url for posting to server takes name and comment
-  let url = "http://localhost:3000/";
+  let url = "http://recipie-helper.herokuapp.com";
   fetch(url, fetchOptions)
     .then(checkStatus)
     .then(function(responseText) {
@@ -124,7 +124,7 @@
       console.log(error);
     });
     //fetch to get updated file after posting t0 it
-    fetch("http://localhost:3000/?mode=reviews&title=" + fold)
+    fetch("http://recipie-helper.herokuapp.com/?mode=reviews&title=" + fold)
         .then(checkStatus)
         .then(function(responseText) {
           let c = document.getElementById("revtext");
@@ -158,7 +158,7 @@
     //fetch that call the recipe on javascript
     let rec = document.getElementById("recipes");
     rec.innerHTML = "";
-    fetch("http://localhost:3000/?mode=recipes&title=null")
+    fetch("http://recipie-helper.herokuapp.com/?mode=recipes&title=null")
         .then(checkStatus)
         .then(function(responseText) {
           let rep = JSON.parse(responseText);
@@ -219,7 +219,7 @@
     craft.appendChild(single);
     craft.appendChild(photo);
     //all the fetches go and get necassery clicked items from json
-    fetch("http://localhost:3000/?mode=difficulty&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/?mode=difficulty&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
             let single = document.createElement("p");
@@ -229,7 +229,7 @@
         .catch(function(error) {
           console.log(error);
     });
-    fetch("http://localhost:3000/?mode=ingredients&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/?mode=ingredients&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
             let ingr = JSON.parse(responseText);
@@ -244,7 +244,7 @@
         .catch(function(error) {
           console.log(error);
     });
-    fetch("http://localhost:3000/?mode=servings&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/?mode=servings&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
           let temp = JSON.parse(responseText);
@@ -255,7 +255,7 @@
         .catch(function(error) {
           console.log(error);
     });
-    fetch("http://localhost:3000/?mode=time&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/mode=time&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
           let temp = JSON.parse(responseText);
@@ -266,7 +266,7 @@
         .catch(function(error) {
           console.log(error);
     });
-    fetch("http://localhost:3000/?mode=instructions&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/?mode=instructions&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
           let ingr = JSON.parse(responseText);
@@ -281,7 +281,7 @@
         .catch(function(error) {
           console.log(error);
     });
-    fetch("http://localhost:3000/?mode=reviews&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/?mode=reviews&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
           let c = document.getElementById("revtext");
