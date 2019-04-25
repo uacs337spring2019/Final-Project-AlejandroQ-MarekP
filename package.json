@@ -2,14 +2,16 @@
   "name": "final-project-alejandroq-marekp",
   "version": "1.0.0",
   "description": "finalproject",
-  "main": "cooking.js","dependencies": {
-"client-sessions": "^0.8.0",
-"express": "^4.16.4",
-"fs": "^0.0.1-security",
+  "main": "cooking.js",
+  "dependencies": {
+     "client-sessions": "^0.8.0",
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security",
 },
 "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node cooking_service.js"
   },
   "repository": {
     "type": "git",
