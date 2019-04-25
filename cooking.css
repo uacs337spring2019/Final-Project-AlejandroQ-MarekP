@@ -1,0 +1,95 @@
+/*
+	CSc 337, Final project
+	CSS for final project.  Sets the displays to flex, image size,
+  font familes, and a float left for the recipes
+*/
+body{
+  background-color: #FFF8DC;
+  font-family: arial, monospace, sans-serif;
+  /* font-size: 11px; */
+  /* #C8C8C8; */
+
+}
+h1{
+  text-align: center;
+  text-shadow: 0 2px grey, 0 3px #777;
+}
+#craft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#craft2 img{
+  width: 250px;
+
+}
+
+
+#craft2{
+  justify-content: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 5px;
+}
+#craft2 li{
+  text-align: left;
+}
+#flex{
+  display: flex;
+}
+#inputs{
+  width: 26%;
+  font-size: 11px;
+}
+
+#inputs label{
+  padding-bottom: 5px;
+
+}
+
+#reci{
+  width:55%;
+  height: 560px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* #revtext{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+} */
+#temp2, #centerbutton{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+#recipes img {
+  width: 120px;
+  height: 190px;
+}
+
+#recipes div {
+  background-color: #FFE5FF;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  float: left;
+  margin: 25px;
+  text-align: center;
+  width: 180px;
+  height: 250px;
+}
+#third{
+  display:flex;
+  width:19%;
+  height: 200px;
+  justify-content: center;
+
+  text-align: center;
+  flex-direction: column;
+}
+#submission{
+  text-align: left;
+}
+.boxes{
+  margin: 5px;
+}

@@ -1,0 +1,128 @@
+<!--
+CSc 337, Final Project
+html for final project, makes checked boxes, couple divs. has 3 main divs
+they are responsible for the checked list, all recipes, and messages
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Helper</title>
+    <meta charset="utf-8" />
+		<link href="cooking.css" type="text/css" rel="stylesheet" />
+    <script src="cooking.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <h1>Welcome to Recipe Helper</h1>
+    <div id="flex">
+      <div id="inputs">
+        <h2>What ingredients do you have at home?</h2>
+        <div id="Veg">
+            <h3> Vegetables </h3>
+          <input type="checkbox" id="tomato" class = "checkBox">
+          <label for="tomato">tomato</label>
+          <input type="checkbox" id="letuce" class = "checkBox">
+          <label for="letuce">letuce</label>
+          <input type="checkbox" id="potato" class = "checkBox">
+          <label for="potato">potato</label>
+          <input type="checkbox" id="onions" class = "checkBox">
+          <label for="onions">onion</label>
+          <input type="checkbox" id="carrots" class = "checkBox">
+          <label for="carrots">carrot</label>
+          <input type="checkbox" id="spinach" class = "checkBox">
+          <label for="spinach">spinach</label>
+          <input type="checkbox" id="bell" class = "checkBox">
+          <label for="bell">bell pepper</label>
+          <input type="checkbox" id="garlic" class = "checkBox">
+          <label for="garlic">garlic</label>
+        </div>
+        <div id="meats">
+          <h3>Meats</h3>
+          <input type="checkbox" id="Beef" class = "checkBox">
+          <label for="Beef">Ground Beef</label>
+          <input type="checkbox" id="Chicken" class = "checkBox">
+          <label for="Chicken">Chicken</label>
+          <input type="checkbox" id="Turkey" class = "checkBox">
+          <label for="Turkey">Turkey</label>
+          <input type="checkbox" id="Fish" class = "checkBox">
+          <label for="Fish">Fish</label>
+        </div>
+        <div id="pasta">
+          <h3>Pastas</h3>
+          <input type="checkbox" id="macaroni" class = "checkBox">
+          <label for="macaroni">macaroni</label>
+          <input type="checkbox" id="rigatoni" class = "checkBox">
+          <label for="rigatoni">rigatoni</label>
+          <input type="checkbox" id="fettuccine" class = "checkBox">
+          <label for="fettuccine">fettuccine</label>
+          <input type="checkbox" id="spaghetti" class = "checkBox">
+          <label for="spaghetti">spaghetti</label>
+          <input type="checkbox" id="penne" class = "checkBox">
+          <label for="penne">penne</label>
+          <input type="checkbox" id="rotini" class = "checkBox">
+          <label for="rotini">rotini</label>
+          <input type="checkbox" id="lasagna" class = "checkBox">
+          <label for="lasagna">lasagna</label>
+        </div>
+        <div id="Spices">
+          <h3>spices</h3>
+          <input type="checkbox" id="salt" class = "checkBox">
+          <label for="salt">salt</label>
+          <input type="checkbox" id="pepper" class = "checkBox">
+          <label for="pepper">pepper</label>
+          <input type="checkbox" id="garlicpowder" class = "checkBox">
+          <label for="garlic">garlic powder</label>
+          <input type="checkbox" id="onion" class = "checkBox">
+          <label for="onion">onion powder</label>
+          <input type="checkbox" id="paprika" class = "checkBox">
+          <label for="paprika">paprika</label>
+        </div>
+        <div id="temp2">
+          <button id="search">Search</button>
+        </div>
+      </div>
+      <div id="reci">
+        <div id="recipes">
+        </div>
+        <div id="craft">
+          <div id = "craft2">
+          </div>
+          <button id="back">Back</button>
+        </div>
+      </div>
+      <div id="third">
+        <!-- <div id="timer">
+          <p>Timer</p>
+          <div id = "timerin">
+            <lable><input type = "number" id= "hour" class = "time" placeholder="hh" max="99" min = "0" maxlength="2">:
+              <input type = "number" id= "minutes" class = "time" placeholder="mm" max="99" min = "0" maxlength="2">:
+              <input type = "number" id= "seconds" class = "time" placeholder="ss" max="99" min = "0" maxlength="2">
+            </lable>
+          </div>
+          <div id = "timerout" visibility = "hidden">
+          </div>
+          <button type = "button" id ="start">Start</button>
+          <button type = "button" id ="stop">Stop</button>
+        </div> -->
+        <div id="reviews">
+          <h3>Reviews</h3>
+          <div id="revtext">
+          </div>
+          <div class="boxes" id="submission">
+            <p>Name: <input type="text" id="name" class="textbox"></p>
+            <p>Review: <input type="text" id="message" class="textbox"></p>
+            <div id="centerbutton">
+            <button id="post">Post</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+
+
+</html>
