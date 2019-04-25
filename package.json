@@ -4,8 +4,8 @@
   "description": "finalproject",
   "main": "cooking.js",
   "dependencies": {
-     "client-sessions": "^0.8.0"
-    "express": "^4.16.4"
+     "client-sessions": "^0.8.0",
+    "express": "^4.16.4",
     "fs": "^0.0.1-security"
 },
 "devDependencies": {},
