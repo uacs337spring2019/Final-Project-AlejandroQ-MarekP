@@ -13,6 +13,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node cooking_service.js"
   },
+  "engines":{
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uacs337spring2019/Final-Project-AlejandroQ-MarekP.git"
