@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static('public'));
-
+app.use(express.static(__dirname)):
 
 /**function for reading off the files and returns a string**/
 function read_file(file_name, title) {
@@ -98,7 +98,7 @@ function build_time(line){
   }
 
 console.log('web service started');
-app.get('/', function (req, res) {
+app.get('', function (req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 
   let title = req.query.title;
@@ -182,4 +182,4 @@ app.post('/', jsonParser, function (req, res) {
 	});
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
