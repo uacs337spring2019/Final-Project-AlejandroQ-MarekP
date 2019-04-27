@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static('public'));
-app.use(express.static(__dirname)):
+app.use(express.static(__dirname));
 console.log("started');
 /**function for reading off the files and returns a string**/
 function read_file(file_name, title) {
