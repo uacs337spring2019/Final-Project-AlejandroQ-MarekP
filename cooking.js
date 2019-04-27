@@ -255,7 +255,7 @@
         .catch(function(error) {
           console.log(error);
     });
-    fetch("http://recipie-helper.herokuapp.com/mode=time&title=" + this.id)
+    fetch("http://recipie-helper.herokuapp.com/?mode=time&title=" + this.id)
         .then(checkStatus)
         .then(function(responseText) {
           let temp = JSON.parse(responseText);
